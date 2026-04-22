@@ -1,4 +1,6 @@
-# studio
+# 🚀 Aldebron Studio
+
+> Mobile-first SaaS for coaches, trainers & studios — scheduling, staff, payments & client management
 Mobile-first SaaS for coaches, trainers &amp; studios — scheduling, staff, payments &amp; client management
 # 🚀 Aldebron Studio
 
@@ -77,7 +79,7 @@ Built for scalability and speed:
 
 * **Frontend:** FlutterFlow (mobile-first)
 * **Backend:** Firebase (Firestore + Auth)
-* **Subscriptions:** RevenueCat
+* **Subscriptions:** RevenueCat + Razorpay
 * **Real-time Data:** Firestore streams
 
 ---
@@ -101,6 +103,37 @@ Built for scalability and speed:
 * Scalable architecture for growing studios
 
 ---
+## 🧠 Why Aldebron Studio?
+
+Most tools like Mindbody are:
+- Expensive
+- Complex
+- Desktop-first
+
+Aldebron Studio is built differently:
+- Mobile-first
+- Faster onboarding
+- Designed for independent coaches & studios
+
+---
+
+## 🌍 Status
+
+- 🚧 In active development
+- 🧪 Tested with real studio workflows
+- 🎯 Targeting US & global markets
+
+---
+
+## 🏗 Architecture
+
+FlutterFlow (Frontend)
+        ↓
+Firebase (Auth + Firestore)
+        ↓
+RevenueCat (Subscriptions)
+        ↓
+Razorpay (Subscriptions)
 
 ## 📈 Vision
 
