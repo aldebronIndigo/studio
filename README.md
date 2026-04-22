@@ -1,5 +1,5 @@
 # 🚀 Aldebron Studio
-
+> Built to replace complex legacy systems with a simple, mobile-first experience
 > Mobile-first SaaS for coaches, trainers & studios — scheduling, staff, payments & client management
 Mobile-first SaaS for coaches, trainers &amp; studios — scheduling, staff, payments &amp; client management
 # 🚀 Aldebron Studio
@@ -93,6 +93,16 @@ Built for scalability and speed:
 * Independent coaches & trainers
 
 ---
+## 💰 Pricing Philosophy
+
+Designed to be affordable for independent studios:
+- Lower cost vs legacy platforms like Mindbody
+- Simple subscription model
+- Built to scale with business growth
+
+Focus: High value, low friction onboarding
+
+---
 
 ## 🔥 Key Differentiators
 
@@ -116,7 +126,30 @@ Aldebron Studio is built differently:
 - Designed for independent coaches & studios
 
 ---
+## 🎯 Example Use Case
 
+A gym with:
+- 100 members
+- 5 instructors
+- Daily batch-based training
+
+Can manage:
+- Attendance tracking
+- Instructor schedules
+- Member subscriptions
+- Revenue insights
+
+All from a single mobile app
+
+---
+## 🔮 Future Scope
+
+- Multi-branch analytics
+- Instructor revenue sharing
+- Integrated content delivery (courses)
+- Advanced retention tracking
+
+---
 ## 🌍 Status
 
 - 🚧 In active development
