@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "787171650362",
+    "project_id": "aldebron-studio-7qe7hy",
+    "storage_bucket": "aldebron-studio-7qe7hy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787171650362:android:4678169b16ae18af04be03",
+        "android_client_info": {
+          "package_name": "com.mycompany.aldebron.studio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787171650362-kve6u3k9e77r4vdnvc0mfrtrem8hlu0b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.aldebron.studio",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "787171650362-qu4bdj9nq04lfbbnhnrnetres5kgjvet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.aldebron.studio",
+            "certificate_hash": "211ab21cdaeb8bf4548ef961aeed578dae1adbe1"
+          }
+        },
+        {
+          "client_id": "787171650362-oreb7l67uhmurjc9832cou3vdre4tgbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCL_3q-weoX1en-PO0LGllgBN0I-TV32c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787171650362-oreb7l67uhmurjc9832cou3vdre4tgbe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "787171650362-epol1uohdeuofvmdpubt6kduj12sat56.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.aldebron.studio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

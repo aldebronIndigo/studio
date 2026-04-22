@@ -1,0 +1,440 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{document} {
+      allow create: if request.auth.uid == document;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /Club/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /Club/{parent}/MembersClub/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/MembersClub/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/memberSequence/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/memberSequence/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/channelPartners/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/channelPartners/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/leads/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/leads/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/supportTickets/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/supportTickets/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /supportTicketsGeneral/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /users/{parent}/notifications/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/notifications/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/paymentDetails/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/paymentDetails/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/contests/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/contests/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/paymentToCP/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/paymentToCP/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /users/{parent}/generalContests/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/generalContests/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/memberPasses/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/memberPasses/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/Groups/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Groups/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/clubEvents/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/clubEvents/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/groupEvents/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/groupEvents/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/tickets/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/tickets/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/staffAccounts/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/staffAccounts/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/attendance/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/attendance/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/staffLeads/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/staffLeads/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /Club/{parent}/rules/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /{path=**}/rules/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /studio/{parent}/studioSequences/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/studioSequences/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/branch/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/branch/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/courses/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/courses/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/classes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/classes/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/rulesStudio/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/rulesStudio/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/members/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/members/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/packages/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/packages/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/studioStaff/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/studioStaff/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/passes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/passes/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /users/{parent}/activePasses/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/activePasses/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/memberApplication/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/memberApplication/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /users/{parent}/activeCourses/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/activeCourses/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /couponCodes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if false;
+    }
+
+    match /studio/{parent}/StudioLeads/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/StudioLeads/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /studio/{parent}/paymentNotes/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+
+    match /{path=**}/paymentNotes/{document} {
+      allow read: if request.auth != null;
+    }
+
+
+    match /ff_user_push_notifications/{id} {
+      allow read, update, delete: if false;
+      allow create: if /databases/$(database)/documents/users/$(request.auth.uid) == request.resource.data.sender;
+    }
+  }
+}
